@@ -35,7 +35,7 @@ public:
         row_cover = std::vector<int32_t>(rows, 0);
         col_cover = std::vector<int32_t>(cols, 0);
 
-        path = std::vector<std::vector<int32_t>>((std::max)(rows, cols) + 2, std::vector<int32_t>(2));
+        path = std::vector<std::vector<int32_t>>(rows * cols, std::vector<int32_t>(2));
         path_count = 0;
         path_row_0 = 0;
         path_col_0 = 0;
